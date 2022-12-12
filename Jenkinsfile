@@ -6,5 +6,11 @@ pipeline {
                 git 'https://github.com/thejab811/Demo-counter-app.git'
             }
         }
+        stage('Unit Testing'){
+            steps{
+                sh 'mvn test'
+            }
+        }
+        
     }
 }
